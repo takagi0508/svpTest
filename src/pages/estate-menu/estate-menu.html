@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>ATRIUM　不動産情報検索</ion-title>
+  </ion-navbar>
+</ion-header> 
+<ion-content padding>
+    <ion-grid >
+      <ion-row>
+        <ion-col>
+          <ion-card>
+              <ion-icon name="logo-reddit"></ion-icon><br>
+            エリア<br>から探す
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card> 
+              <ion-icon name="train"></ion-icon><br>
+            駅<br>から探す
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+              <ion-icon name="map"></ion-icon><br>
+            地図<br>から探す
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col> 
+          <ion-card>
+              <ion-icon name="navigate"></ion-icon><br>
+            現在位置<br>から探す
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+              <ion-icon name="logo-playstation"></ion-icon><br>
+            ランク<br>から探す
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+              <ion-icon name="bicycle"></ion-icon><br>
+            通勤時間<br>から探す
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-searchbar
+    placeholder="キーワードから探す"
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar> 
+  </ion-content>
+

@@ -1,0 +1,152 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      お客様情報登録
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+<ion-list>
+  <ion-label id="kaiinNo01" color="primary" class="labelText">会員番号</ion-label>
+  <ion-grid>
+    <ion-row id="info-row">
+    <ion-col>
+            <ion-select [(ngModel)]="format0" class="inputText" placeholder="****">
+              <ion-option value="4541">4541</ion-option>
+              <ion-option value="5252">5252</ion-option>
+              <ion-option value="3528">3528</ion-option>
+              <ion-option value="3777">3777</ion-option>
+            </ion-select>
+    </ion-col>
+    <ion-col>
+        <ion-input id="kaiinNo02" class="inputText" type="text" placeholder="****" maxlength="4"></ion-input>
+    </ion-col>
+    <ion-col>
+        <ion-input id="kaiinNo03" class="inputText" type="text" placeholder="****" maxlength="4"></ion-input>
+    </ion-col>
+    <ion-col>
+        <ion-input id="kaiinNo04" class="inputText" type="text" placeholder="****" maxlength="4"></ion-input>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-label color="primary"  class="labelText">カード有効期限</ion-label>
+  <ion-item>
+      <ion-select [(ngModel)]="month">
+        <ion-option value="01">1月</ion-option>
+        <ion-option value="02">2月</ion-option>
+        <ion-option value="03">3月</ion-option>
+        <ion-option value="04">4月</ion-option>
+        <ion-option value="05">5月</ion-option>
+        <ion-option value="06">6月</ion-option>
+        <ion-option value="07">7月</ion-option>
+        <ion-option value="08">8月</ion-option>
+        <ion-option value="09">9月</ion-option>
+        <ion-option value="10">10月</ion-option>
+        <ion-option value="11">11月</ion-option>
+        <ion-option value="12">12月</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="year">
+          <ion-option value="2018">2018年</ion-option>
+          <ion-option value="2019">2019年</ion-option>
+          <ion-option value="2020">2020年</ion-option>
+          <ion-option value="2021">2021年</ion-option>
+          <ion-option value="2022">2022年</ion-option>
+          <ion-option value="2023">2023年</ion-option>
+          <ion-option value="2024">2024年</ion-option>
+          <ion-option value="2025">2025年</ion-option>
+          <ion-option value="2026">2026年</ion-option>
+          <ion-option value="2027">2027年</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-label color="primary" class="labelText">氏名（カナ）</ion-label>
+    <ion-item>
+    <ion-input type="text" placeholder="セイ"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="メイ"></ion-input>
+  </ion-item>
+      <ion-label color="primary" class="labelText">氏名（漢字）</ion-label>
+  <ion-item>
+    <ion-input type="text" placeholder="姓"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input type="text" placeholder="名"></ion-input>
+  </ion-item>  
+  <ion-label color="primary" class="labelText">生年月日</ion-label>
+  <ion-item>
+    <ion-select [(ngModel)]="year">
+          <ion-option *ngFor="let yr of years">{{yr}}</ion-option>
+        </ion-select>
+      <ion-select [(ngModel)]="month">
+        <ion-option value="01">1月</ion-option>
+        <ion-option value="02">2月</ion-option>
+        <ion-option value="03">3月</ion-option>
+        <ion-option value="04">4月</ion-option>
+        <ion-option value="05">5月</ion-option>
+        <ion-option value="06">6月</ion-option>
+        <ion-option value="07">7月</ion-option>
+        <ion-option value="08">8月</ion-option>
+        <ion-option value="09">9月</ion-option>
+        <ion-option value="10">10月</ion-option>
+        <ion-option value="11">11月</ion-option>
+        <ion-option value="12">12月</ion-option>
+      </ion-select>
+      <ion-select [(ngModel)]="day">
+          <ion-option value="01">1日</ion-option>
+          <ion-option value="02">2日</ion-option>
+          <ion-option value="03">3日</ion-option>
+          <ion-option value="04">4日</ion-option>
+          <ion-option value="05">5日</ion-option>
+          <ion-option value="06">6日</ion-option>
+          <ion-option value="07">7日</ion-option>
+          <ion-option value="08">8日</ion-option>
+          <ion-option value="09">9日</ion-option>
+          <ion-option value="10">10日</ion-option>
+          <ion-option value="11">11日</ion-option>
+          <ion-option value="12">12日</ion-option>
+          <ion-option value="13">13日</ion-option>
+          <ion-option value="14">14日</ion-option>
+          <ion-option value="15">15日</ion-option>
+          <ion-option value="16">16日</ion-option>
+          <ion-option value="17">17日</ion-option>
+          <ion-option value="18">18日</ion-option>
+          <ion-option value="19">19日</ion-option>
+          <ion-option value="20">20日</ion-option>
+          <ion-option value="21">21日</ion-option>
+          <ion-option value="22">22日</ion-option>
+          <ion-option value="23">23日</ion-option>
+          <ion-option value="24">24日</ion-option>
+          <ion-option value="25">25日</ion-option>
+          <ion-option value="26">26日</ion-option>
+          <ion-option value="27">27日</ion-option>
+          <ion-option value="28">28日</ion-option>
+          <ion-option value="29">29日</ion-option>
+          <ion-option value="30">30日</ion-option>
+          <ion-option value="31">31日</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-label color="primary" class="labelText">お届けの電話番号（自宅）</ion-label>
+  <ion-item>
+    <ion-input type="number" placeholder="ハイフンあり"></ion-input>
+  </ion-item>
+  <ion-label color="primary" class="labelText">Eメールアドレス</ion-label>
+  <ion-item>
+    <ion-input type="email" placeholder=""></ion-input>
+  </ion-item>
+  <ion-label color="primary" class="labelText">Eメールアドレス(確認)</ion-label>
+  <ion-item>
+      <ion-input type="email" placeholder=""></ion-input>
+    </ion-item>
+</ion-list>
+
+下記に該当する方は保険プランにはお申し込みいただけません。 <BR>
+※1）普通傷害保険、家族傷害保険等、この保険契約の全部または一部に対して支払責任が同じである他の保険契約または共済契約が 
+ある場合で、他契約と合わせて死亡・後遺障害保険金額が5,000万円、入院日額が20,000円、通院日額が13,000円を超える場合。 <BR>
+※2）過去３年間の間に１回の事故で５万円以上の保険金を請求または受領したことがある場合。 <BR>
+※3）保険プランについて、過去、自動更新がお見送りとなったことがある場合。
+<BR><BR>
+<button ion-button color="light" (click)="onClickNext()">次へ</button>
+<button ion-button color="light" (click)="onClickBack()">戻る</button>
+<button ion-button color="light" (click)="onClickCancel()">お申し込みを中止する</button>
+
+</ion-content>

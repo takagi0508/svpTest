@@ -1,0 +1,15 @@
+page-svp-input {
+    .inputText{
+        border: solid 1px;
+    }
+
+    .labelText{
+        font-weight: bold;
+        
+    }
+
+    ion-select {
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
